@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hapák Viktor | Portfólió</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome ikonok -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Devicon technológiai ikonok -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    >
+
+    <!-- Saját CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<div class="page-container">
+ <nav class="nav-container">
+  <ul class="nav-items">
+  
+   <div class="left-nav">
+    <li class="nav-item brand-item">
+	 <a class="navbar-brand" href="#">
+		<i class="fa-solid fa-laptop-code brand-icon"></i>
+		<label>Portfólió</label>
+	 </a>
+	</li>
+   </div>
+   
+   <div class="right-nav">
+    <li class="nav-item"><a class="nav-link" onclick="scrollToSection('title-block')">Címlap</a></li>
+	<li class="nav-item"><a class="nav-link" onclick="scrollToSection('tools-block')">Felhasznált eszközök</a></li>
+	<li class="nav-item"><a class="nav-link" onclick="scrollToSection('projects-block')">Projektek</a></li>
+	<li class="nav-item"><a class="nav-link" onclick="scrollToSection('contact-block')">Hivatkozások</a></li>
+   </div>
+   
+   <li class="nav-item open-menu" onclick="openSideMenu()"><a class="open-link"><i class="fa fa-bars"></i></a></li>
+  
+  </ul>
+  <div class="side-nav" id="side-nav-id">
+	<a class="close-button" onclick="closeSideMenu()"><i class="fa fa-close"></i></a>
+    <a class="side-item" onclick="scrollToSection('title-block')">Címlap</a>
+	<a class="side-item" onclick="scrollToSection('tools-block')">Felhasznált eszközök</a>
+	<a class="side-item" onclick="scrollToSection('projects-block')">Projektek</a>
+	<a class="side-item" onclick="scrollToSection('contact-block')">Hivatkozások</a>
+  </div>
+ </nav>
+ 
+ <button class="btn btn-primary btn-small arrow-top-button" id="arrow-top-id" onclick="scrollToTop()">
+	<i class="fa-solid fa-arrow-up"></i>
+ </button>
+ 
+ <div class="profile-div" id="title-block">
+  <div class="title-div">
+   <img class="profile" src="./imgs/profile.png" id="profile-block"/>
+   <div class="main-title">
+    <h1 class="name-title">Hapák Viktor</h1>
+	<h2 class="profession-title">Junior fejlesztő</h2>
+   </div>
+  </div>
+ </div>
+ 
+ <div class="enum-div" id="tools-block">
+   <h2 class="section-title">Felhasznált eszközök</h2>
+   <h4 class="section-description">Projektek és feladatok megoldása során elsajátított és alkalmazott technológiák</h4>
+   <ul class="skill-items">
+	<li class="skill-item">
+		<label class="skill-category">Programozási nyelvek: </label>
+		<span class="skills">
+			<img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" title="Java">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python">
+			<img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" title="C#">
+		</span>
+	</li>
+	<li class="skill-item">
+		<label class="skill-category">Szkriptnyelvek: </label>
+		<span class="skills">
+			<img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" title="TypeScript">
+			<img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" title="Php">
+		</span>
+	</li>
+	<li class="skill-item">
+		<label class="skill-category">Frontend: </label>
+		<span class="skills">
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+				 alt="HTML5"
+				 title="HTML">
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+				 alt="Angular"
+				 title="Angular">
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+				 alt="React"
+				 title="React">
+
+			<span class="skill-text-badge" title="AJAX">AJAX</span>
+		</span>
+	</li>
+	<li class="skill-item">
+		<label class="skill-category">UX/UI: </label>
+		<span class="skills">
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+				 alt="CSS3"
+				 title="CSS">
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+				 alt="Bootstrap"
+				 title="Bootstrap">
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+				 alt="Figma"
+				 title="Figma">
+		</span>
+	</li>
+	<li class="skill-item">
+		<label class="skill-category">Backend: </label>
+		<span class="skills">
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+				 alt="Spring"
+				 title="Spring / Spring Boot">
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg"
+				 alt="ASP.NET"
+				 title="ASP.NET / ASP.NET Core">
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+				 alt="Laravel"
+				 title="Laravel">
+		</span>
+	</li>
+	<li class="skill-item">
+		<label class="skill-category">Adatbázisok & adatfeldolgozás: </label>
+		<span class="skills">
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+				 alt="MySQL"
+				 title="MySQL">
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
+				 alt="MSSQL"
+				 title="Microsoft SQL Server">
+				 
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg"
+				 alt="Hibernate"
+				 title="JPA/Hibernate/Spring Data JPA">	 
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/entityframeworkcore/entityframeworkcore-original.svg"
+				 alt="Entity Framework Core"
+				 title="Entity Framework Core">
+	 
+			<span class="skill-text-badge-2" title="MySQL API">JDBC</span>
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
+				 alt="Scikit-learn"
+				 title="Numpy + Scikit-learn">
+		</span>
+	</li>
+	<li class="skill-item">
+		<label class="skill-category">Adatlekérdezés: </label>
+		<span class="skills">
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqldeveloper/sqldeveloper-original.svg"
+				 alt="SQL"
+				 title="SQL : SQL Developer">
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg"
+				 alt="JSON"
+				 title="JSON : XQuery">
+		</span>
+	</li>
+	<li class="skill-item">
+		<label class="skill-category">Desktop UI / grafika: </label>
+		<span class="skills">
+			<span class="skill-text-badge" title="JavaFX">JavaFX</span>
+
+			<span class="skill-text-badge-2" title="Java : Swing + Awt">Swing</span>
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
+				 alt="OpenCV"
+				 title="OpenCV">
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/processing/processing-original.svg"
+				 alt="Processing"
+				 title="Processing">
+		</span>
+	</li>
+	<li class="skill-item">
+		<label class="skill-category">Mobilfejlesztés: </label>
+		<span class="skills">
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
+				 alt="Android Studio"
+				 title="Android Studio">
+		</span>
+	</li>
+	<li class="skill-item">
+		<label class="skill-category">Tesztelés: </label>
+		<span class="skills">
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg"
+				 alt="JUnit"
+				 title="JUnit">
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg"
+				 alt="Selenium"
+				 title="Selenium">
+		</span>
+	</li>
+	<li class="skill-item">
+		<label class="skill-category">Fejlesztési eszközök: </label>
+		<span class="skills">
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+				 alt="Git"
+				 title="Git">
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+				 alt="GitHub"
+				 title="GitHub">
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+				 alt="Trello / Kanban"
+				 title="Kanban : Trello">
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg"
+				 alt="OpenAI"
+				 title="OpenAI : Codex">
+				 
+		    <img
+				class="skill-logo"
+				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg"
+				alt="Vercel"
+				title="Vercel"
+			/>		 
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/railway.svg"
+				 alt="Railway"
+				 title="Railway">
+
+			<img class="skill-logo"
+				 src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/render.svg"
+				 alt="Render"
+				 title="Render">
+		</span>
+	</li>
+	<li class="skill-item">
+    <label class="skill-category">IT konfiguráció / virtualizáció: </label>
+    <span class="skills">
+        <img class="skill-logo"
+			 src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/gns3.svg"
+			 alt="GNS3"
+			 title="GNS3">
+
+        <img class="skill-logo"
+             src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/mikrotik.svg"
+             alt="MikroTik"
+             title="MikroTik">
+
+        <img class="skill-logo"
+			 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"
+			 alt="Oracle VirtualBox"
+			 title="Oracle VirtualBox">
+
+        <img class="skill-logo"
+             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ssh/ssh-original.svg"
+             alt="SSH"
+             title="SSH">
+
+        <img class="skill-logo"
+             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/putty/putty-original.svg"
+             alt="PuTTY"
+             title="PuTTY">
+
+        <img class="skill-logo"
+             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+             alt="Linux server"
+             title="Linux szerver">
+
+        <img class="skill-logo"
+             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"
+             alt="Windows configuration"
+             title="Windows konfiguráció">
+			 
+		<span class="rdp-icon-wrapper" title="Remote Desktop Protocol">
+			<i class="fa-solid fa-desktop skill-fa-icon"></i>
+			<span class="rdp-label">RDP</span>
+		</span>
+    </span>
+</li>
+   </ul>
+ </div>
+ 
+ <div class="projects-div" id="projects-block">
+   <h2 class="section-title">Projektek</h2>
+   <h4 class="section-description">Tanulmányi projektek, egyéni fejlesztések</h4>
+   
+   <div class="card bg-secondary">
+		<div class="card-header px-3 py-2">
+			<div class="row h-100">
+				<h4 class="text-white fw-bold">Full-stack webalkalmazás (ASP.NET Core + React) : Alapvető webáruházi működés</h4>
+			</div>
+		</div>
+		<div class="card-body p-4">
+			<div class="project-body-row">
+				<div class="open-details-div">
+					<button class="btn btn-primary btn-sm open-details-button" onclick="openDetails('project1-arrow','paragraph-1')">
+						<i class="fa-solid fa-chevron-down" id="project1-arrow"></i>
+					</button>
+				</div>
+				<div class="project-tools-div">
+					<span class="project-tool-badge">C#</span>
+					<span class="project-tool-badge">MSSQL</span>
+					<span class="project-tool-badge">JSON</span>
+					<span class="project-tool-badge">ASP .NET</span>
+					<span class="project-tool-badge">Entity Framework</span>
+					<span class="project-tool-badge">REST</span>
+					<span class="project-tool-badge">React</span>
+					<span class="project-tool-badge">HTML</span>
+					<span class="project-tool-badge">CSS</span>
+					<span class="project-tool-badge">Bootstrap</span>
+				</div>
+			</div>
+			<div class="project-details-div" id="paragraph-1">
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Leírás:</label>
+					Webáruházi funkcionalitások megvalósítása: termékek kategorizálása, irányított keresés és szűrés,
+					bevásárlókosár létrehozása, rendelés leadása, jóváhagyása és elutasítása, készlet- és bevételnyilvántartás,
+					jogosultságkezelés (user, mod, admin), moderátori jogosultságok adminisztrátori kezelése;
+					Backend oldalon relációs adatbázis és <i>ORM</i> alkalmazása, <i>EF Core</i> alapú adatfeldolgozás
+					<i>LINQ</i> használatával, <i>REST API</i>-végpontok, middleware és <i>JSON</i>-kimenetek a kérelmek feldolgozásához,
+					<i>JWT</i>-alapú autentikáció, <i>JSON</i> forrásfájlok használata;
+					Frontend oldalon reszponzív és dinamikus felület biztosítása, <i>Axios</i> alapú kliens és
+					<i>Context API</i>, saját hook, <i>useForm</i> alapú dinamikus űrlapok használata, <i>AJAX</i>-alapú megoldások használata.
+				</p>
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Forrás:</label>
+					<a class="project-resource" href="https://github.com/ViktorHapak/Shop_Fullstack-MSSQL-ASP.NET-REACT" target="_blank">
+						https://github.com/ViktorHapak/Shop_Fullstack-MSSQL-ASP.NET-REACT
+					</a>
+				</p>
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Demo előnézet:</label>
+					<a class="project-resource" href="https://shop-fullstack-mssql-asp-net-react-demo-jsf1r51r5-own-projects4.vercel.app/main/shopping-area" target="_blank">
+						https://shop-fullstack-mssql-asp-net-react-demo-jsf1r51r5-own-projects4.vercel.app/main/shopping-area
+					</a>
+				</p>
+			</div>
+		</div>
+   </div>
+   <div class="card bg-secondary">
+		<div class="card-header px-3 py-2">
+			<div class="row h-100">
+				<h4 class="text-white fw-bold">Szakdolgozati projekt : Webalkalmazás fejlesztése Java nyelven</h4>
+			</div>
+		</div>
+		<div class="card-body p-4">
+			<div class="project-body-row">
+				<div class="open-details-div">
+					<button class="btn btn-primary btn-sm open-details-button" onclick="openDetails('project2-arrow','paragraph-2')">
+						<i class="fa-solid fa-chevron-down" id="project2-arrow"></i>
+					</button>
+				</div>
+				<div class="project-tools-div">
+					<span class="project-tool-badge">Java</span>
+					<span class="project-tool-badge">MySQL</span>
+					<span class="project-tool-badge">JDBC</span>
+					<span class="project-tool-badge">Spring</span>
+					<span class="project-tool-badge">Spring Boot</span>
+					<span class="project-tool-badge">JPA</span>
+					<span class="project-tool-badge">Web API</span>
+					<span class="project-tool-badge">Angular</span>
+					<span class="project-tool-badge">HTML</span>
+					<span class="project-tool-badge">CSS</span>
+					<span class="project-tool-badge">Bootstrap</span>
+				</div>
+			</div>
+			<div class="project-details-div" id="paragraph-2">
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Leírás:</label>
+					Full-stack webalkalmazás fejlesztése egyetemi projekt keretében; Osztálynapló megvalósítása: tanulók, osztályok és tanári viszonyok rendszerezése,
+					jogosultsági szintek alapján elérhető CRUD-műveletek, tanári viszonyok alapján elvégezhető értékelés és osztályzat, 
+					jogosultságok (user, parent, tanár, osztályfőnök, admin), felhasználók és további adatok adminisztrátori kezelése;
+					Backend oldalon: relációs adatbázis, annotáció alapú, összetett relációs kapcsolatok
+					és <i>ORM</i> bevezetése adatok rendszerezéséhez;
+					<i>Spring Data JPA</i>, beépített üzleti logikai réteg (<i>Service</i>), tranzakciók
+					és <i>Stream API</i> használata adatfeldolgozás során,
+					aritmetikai függvények használata érdemjegyek számításához;
+					Spring Security komponens alkalmazása <i>JWT</i>-alapú autentikáció és kérelmek szűrése során, <i>Web API</i> létrehozása;
+					Frontend oldalon: reszponzivitás és összetett adatok olvashatóságának biztosítása, kliens létrehozása <i>RxJS-observable</i>-ek alapján, komponensfa alapján 
+					egységekre bontás - globális állapotkezelés <i>session</i>-értékekkel, újrafelhasználható osztályokkal és publikus változókkal, <i>Angular Reactive Forms</i> alapú űrlapok használata.
+					
+				</p>
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Források:</label>
+				</p>
+
+				<ul class="project-sources">
+					<li class="project-source">
+						<i class="source-title">Projekt tárhelye:</i>
+						<a class="project-resource"
+						   href="https://github.com/ViktorHapak/ClassDiary_Fullstack"
+						   target="_blank">
+							https://github.com/ViktorHapak/ClassDiary_Fullstack
+						</a>
+					</li>
+
+					<li class="project-source">
+						<i class="source-title">Dokumentáció:</i>
+						<a class="project-resource"
+						   href="https://drive.google.com/drive/folders/1Dgldpzln_dVlgNdx5DZRsFsRJ1j94ucT?usp=drive_link"
+						   target="_blank">
+							https://drive.google.com/drive/folders/1Dgldpzln_dVlgNdx5DZRsFsRJ1j94ucT?usp=drive_link
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+   </div>
+   <div class="card bg-secondary">
+		<div class="card-header px-3 py-2">
+			<div class="row h-100">
+				<h4 class="text-white fw-bold">Full-stack webalkalmazás (Spring + Angular) továbbfejlesztése</h4>
+			</div>
+		</div>
+		<div class="card-body p-4">
+			<div class="project-body-row">
+				<div class="open-details-div">
+					<button class="btn btn-primary btn-sm open-details-button" onclick="openDetails('project3-arrow','paragraph-3')">
+						<i class="fa-solid fa-chevron-down" id="project3-arrow"></i>
+					</button>
+				</div>
+				<div class="project-tools-div">
+					<span class="project-tool-badge">Java</span>
+					<span class="project-tool-badge">MySQL</span>
+					<span class="project-tool-badge">Spring</span>
+					<span class="project-tool-badge">JPA</span>
+					<span class="project-tool-badge">Web API</span>
+					<span class="project-tool-badge">Angular</span>
+					<span class="project-tool-badge">HTML</span>
+					<span class="project-tool-badge">CSS</span>
+					<span class="project-tool-badge">Bootstrap</span>
+					<span class="project-tool-badge">AJAX</span>
+				</div>
+			</div>
+			<div class="project-details-div" id="paragraph-3">
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Leírás:</label>
+					BSc-évfolyammunka-projekt továbbfejlesztése: reszponzív galéria létrehozása; <i>JWT</i>-alapú autentikáció további használata <i>token blacklist</i> (kijelentkezéskor),
+					felhasználó- és jogosultságalapú szűres során; Új adatmodell és relációs kapcsolatok; Könyvtár- és adatbázis alapú fájlkezelés és ezek szinkronizálása,
+					bináris adatok szállítása, betöltése és megjelenítése; További aszinkron <i>ts</i>-metódusok bevezetése dinamikus megjelenítés optimalizálásához; 
+					<i>NgRX</i>-alapú frontend-állapot és eseménykezelés; <i>VanillaJS</i> és <i>AJAX</i>-alapú weboldal szerkesztése tanulói adatok megjelenítéséhez.
+				</p>
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Források:</label>
+				</p>
+
+				<ul class="project-sources">
+					<li class="project-source">
+						<i class="source-title">Továbbfejlesztett projekt tárhelye:</i>
+						<a class="project-resource"
+						   href="https://github.com/ViktorHapak/ClassDiary_improved_MySQL-Spring-Angular"
+						   target="_blank">
+							https://github.com/ViktorHapak/ClassDiary_improved_MySQL-Spring-Angular
+						</a>
+					</li>
+
+					<li class="project-source">
+						<i class="source-title">AJAX weboldal tárhelye:</i>
+						<a class="project-resource"
+						   href="https://github.com/ViktorHapak/AJAX_page"
+						   target="_blank">
+							https://github.com/ViktorHapak/AJAX_page
+						</a>
+					</li>
+				</ul>
+				
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Demo előnézet:</label>
+					<a class="project-resource" href="https://class-diary-improved-m82elrjb7-own-projects4.vercel.app/" target="_blank">
+						https://class-diary-improved-m82elrjb7-own-projects4.vercel.app/
+					</a>
+				</p>
+			</div>
+		</div>
+   </div>
+   <div class="card bg-secondary">
+		<div class="card-header px-3 py-2">
+			<div class="row h-100">
+				<h4 class="text-white fw-bold">JPA / Hibernate + Spring : NAV-adatfeldolgozás és elemzés</h4>
+			</div>
+		</div>
+		<div class="card-body p-4">
+			<div class="project-body-row">
+				<div class="open-details-div">
+					<button class="btn btn-primary btn-sm open-details-button" onclick="openDetails('project4-arrow','paragraph-4')">
+						<i class="fa-solid fa-chevron-down" id="project4-arrow"></i>
+					</button>
+				</div>
+				<div class="project-tools-div">
+					<span class="project-tool-badge">Java</span>
+					<span class="project-tool-badge">Multi-threading</span>
+					<span class="project-tool-badge">JPA:Hibernate</span>
+					<span class="project-tool-badge">MySQL</span>
+					<span class="project-tool-badge">Spring</span>
+					<span class="project-tool-badge">Swing</span>
+					<span class="project-tool-badge">HTML</span>
+					<span class="project-tool-badge">CSS</span>
+					<span class="project-tool-badge">JavaScript</span>
+				</div>
+			</div>
+			<div class="project-details-div" id="paragraph-4">
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Leírás:</label>
+					NAV-adatelemzés <i>CSV</i>-adatforrás alapján: Adatforrás beolvasása összetett adatszerkezetekből álló tömbbe, leképzés és feltöltés relációs adattáblákba, 
+					párhuzamosítási technikák alkalmazása beolvasás és feldolgozás során; Relációs adattáblák alapján adatelemzés választott szempontok alapján,
+					diagramok és <i>JSON</i>-eredmények előkészítése; <i>VanillaJS</i> alapú dokumentáció szerkesztése az elemzés eredményeivel. 
+				</p>
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Forrás:</label>
+					<a class="project-resource" href="https://github.com/ViktorHapak/JPA-Spring-VanillaJS-based-project-NAV-data-processing-and-presentation" target="_blank">
+						https://github.com/ViktorHapak/JPA-Spring-VanillaJS-based-project-NAV-data-processing-and-presentation
+					</a>
+				</p>
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Dokumentáció előnézet:</label>
+					<a class="project-resource" href="https://nav-data-analysisandpresentation.vercel.app/" target="_blank">
+						https://nav-data-analysisandpresentation.vercel.app/
+					</a>
+				</p>
+			</div>
+		</div>
+   </div>
+   <div class="card bg-secondary">
+		<div class="card-header px-3 py-2">
+			<div class="row h-100">
+				<h4 class="text-white fw-bold">Python : Kriptográfiai aláírás és blokklánc-alapú adatkezelés</h4>
+			</div>
+		</div>
+		<div class="card-body p-4">
+			<div class="project-body-row">
+				<div class="open-details-div">
+					<button class="btn btn-primary btn-sm open-details-button" onclick="openDetails('project5-arrow','paragraph-5')">
+						<i class="fa-solid fa-chevron-down" id="project5-arrow"></i>
+					</button>
+				</div>
+				<div class="project-tools-div">
+					<span class="project-tool-badge">Python</span>
+					<span class="project-tool-badge">MySQL</span>
+					<span class="project-tool-badge">MySQL API</span>
+					<span class="project-tool-badge">NumPy</span>
+				</div>
+			</div>
+			<div class="project-details-div" id="paragraph-5">
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Leírás:</label>
+					Blokklánc-alapú adatláncolás és ECDSA-alapú aláírás megvalósítása: alapszintű felhasználókezelés (user, admin),
+					tranzakciók létrehozása és jóváhagyás esetén blokkláncba rögzítése, ECDSA-alapú aláírás, kulcsgenerálás és validáció 
+					(számítási műveletek <i>NumPy</i> könyvtárral), blokklánc- és Merkle-fa-alapú hash-elés;
+					Felhasználók és tranzakciók <i>API</i>-alapú rögzítése lokális adatbázisban, eredmények (blokklánc, tranzakciók, Merkle-fa) konzolos megjelenítése
+				</p>
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Forrás:</label>
+					<a class="project-resource" href="https://github.com/ViktorHapak/Blockchain-ECDSA_signature-Python" target="_blank">
+						https://github.com/ViktorHapak/Blockchain-ECDSA_signature-Python
+					</a>
+				</p>
+			</div>
+		</div>
+   </div>
+   <div class="card bg-secondary">
+		<div class="card-header px-3 py-2">
+			<div class="row h-100">
+				<h4 class="text-white fw-bold">Párhuzamos képfeldolgozás Java nyelven</h4>
+			</div>
+		</div>
+		<div class="card-body p-4">
+			<div class="project-body-row">
+				<div class="open-details-div">
+					<button class="btn btn-primary btn-sm open-details-button" onclick="openDetails('project6-arrow','paragraph-6')">
+						<i class="fa-solid fa-chevron-down" id="project6-arrow"></i>
+					</button>
+				</div>
+				<div class="project-tools-div">
+					<span class="project-tool-badge">Java</span>
+					<span class="project-tool-badge">Multi-threading</span>
+					<span class="project-tool-badge">Swing</span>
+					<span class="project-tool-badge">AWT</span>
+				</div>
+			</div>
+			<div class="project-details-div" id="paragraph-6">
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Leírás:</label>
+					Pixelgrafikus képtranszformációk és elemzési hisztogram előállítása: kernel-mátrixok és RGB/RGBA-csatornaeltolások használata képi transzformációk előállításához,
+					hisztogram-alapú luminanciaelemzés; Párhuzamosítás chunk-alapú feldolgozással és szálankénti részösszegzéssel, képanyagok beolvasása és eredmények mentése.
+				</p>
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Források:</label>
+				</p>
+
+				<ul class="project-sources">
+					<li class="project-source">
+						<i class="source-title">Képi transzformációk:</i>
+						<a class="project-resource"
+						   href="https://github.com/ViktorHapak/Paralell_imageprocessing"
+						   target="_blank">
+							https://github.com/ViktorHapak/Paralell_imageprocessing
+						</a>
+					</li>
+
+					<li class="project-source">
+						<i class="source-title">Luminanciaelemzések:</i>
+						<a class="project-resource"
+						   href="https://github.com/ViktorHapak/Paralell_rgbtHistogramma"
+						   target="_blank">
+							https://github.com/ViktorHapak/Paralell_rgbtHistogramma
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+   </div>
+   <div class="card bg-secondary">
+		<div class="card-header px-3 py-2">
+			<div class="row h-100">
+				<h4 class="text-white fw-bold">Full-stack webalkalmazás (Laravel + React) : Alap szállodai applikáció</h4>
+			</div>
+		</div>
+		<div class="card-body p-4">
+			<div class="project-body-row">
+				<div class="open-details-div">
+					<button class="btn btn-primary btn-sm open-details-button" onclick="openDetails('project7-arrow','paragraph-7')">
+						<i class="fa-solid fa-chevron-down" id="project7-arrow"></i>
+					</button>
+				</div>
+				<div class="project-tools-div">
+					<span class="project-tool-badge">PHP</span>
+					<span class="project-tool-badge">MySQL</span>
+					<span class="project-tool-badge">Laravel</span>
+					<span class="project-tool-badge">Composer</span>
+					<span class="project-tool-badge">REST</span>
+					<span class="project-tool-badge">React</span>
+					<span class="project-tool-badge">Vite</span>
+					<span class="project-tool-badge">HTML</span>
+					<span class="project-tool-badge">CSS</span>
+					<span class="project-tool-badge">Bootstrap</span>
+				</div>
+			</div>
+			<div class="project-details-div" id="paragraph-7">
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Leírás:</label>
+					Szállodai alapműködés modellezése : szobafoglalás, rendelés jóváhagyása/elutasítása, rendelési állapotok kezelése - lejárt rendelések törlése,
+					autentikáció és jogosultságkezelés (user, admin); Backend oldalon <i>Composer</i> használata projekt létrehozásához, beépített
+					alkalmazásrétegek és <i>Illuminate</i>-komponensek használata, relációs kapcsolatok és <i>REST</i>-végpontok létrehozása;
+					Frontend oldalon reszponzív felület kialakítása <i>Bootstrap</i>-pel, <i>hook</i>-alapú állapotkezelés, funkcionális komponensek létrehozása, 
+					<i>Axios</i> alapú kliens, <i>Context API</i> használata, <i>Vite</i> alapú projektkezelés.
+				</p>
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Forrás:</label>
+					<a class="project-resource" href="https://github.com/ViktorHapak/BasicalHotelApplication-Lavarel-React" target="_blank">
+						https://github.com/ViktorHapak/BasicalHotelApplication-Lavarel-React
+					</a>
+				</p>
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Demo előnézet:</label>
+					<a class="project-resource" href="https://basical-hotel-application-lavarel-react-896qcec6a-own-projects4.vercel.app/" target="_blank">
+						https://basical-hotel-application-lavarel-react-896qcec6a-own-projects4.vercel.app/
+					</a>
+				</p>
+			</div>
+		</div>
+   </div>
+   <div class="card bg-secondary">
+		<div class="card-header px-3 py-2">
+			<div class="row h-100">
+				<h4 class="text-white fw-bold">JavaFX : Snake játék megvalósítása</h4>
+			</div>
+		</div>
+		<div class="card-body p-4">
+			<div class="project-body-row">
+				<div class="open-details-div">
+					<button class="btn btn-primary btn-sm open-details-button" onclick="openDetails('project8-arrow','paragraph-8')">
+						<i class="fa-solid fa-chevron-down" id="project8-arrow"></i>
+					</button>
+				</div>
+				<div class="project-tools-div">
+					<span class="project-tool-badge">Java</span>
+					<span class="project-tool-badge">JavaFX</span>
+					<span class="project-tool-badge">FXML</span>
+					<span class="project-tool-badge">CSS</span>
+					<span class="project-tool-badge">MVC</span>
+					<span class="project-tool-badge">Multi-threading</span>
+				</div>
+			</div>
+			<div class="project-details-div" id="paragraph-8">
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Leírás:</label>
+					Árkádjáték implementálása asztali alkalmazásban: statikus játék- és menüállapotok bevezetése - <i>Scene</i>-betöltés kezelése,
+					billentyűzet-események kezelése statikus játékállapot alapján (logikai állapotjelzők használata); <i>AnimationTimer</i>-alapú logikai állapotdetektálás -
+					további metódusok hívása, aktív játékállapotban <i>FXML</i>-elemek mozgásának és ütközésének kezelése; 
+					Párhuzamosan futó szál használata számlálóhoz - időzítő és „redpoint” kezelésére, kilépéskor ennek leállítása;
+					Kígyó és a szegmensek mozgásának, bővülésének, valamint a szegmens- és fordulópontlisták kezeléséhez további számítások.
+				</p>
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Forrás:</label>
+					<a class="project-resource" href="https://github.com/ViktorHapak/JavaFX_Snake" target="_blank">
+						https://github.com/ViktorHapak/JavaFX_Snake
+					</a>
+				</p>
+			</div>
+		</div>
+   </div>
+   <div class="card bg-secondary">
+		<div class="card-header px-3 py-2">
+			<div class="row h-100">
+				<h4 class="text-white fw-bold">JavaFX : Csoportos osztálynapló-projekt</h4>
+			</div>
+		</div>
+		<div class="card-body p-4">
+			<div class="project-body-row">
+				<div class="open-details-div">
+					<button class="btn btn-primary btn-sm open-details-button" onclick="openDetails('project9-arrow','paragraph-9')">
+						<i class="fa-solid fa-chevron-down" id="project9-arrow"></i>
+					</button>
+				</div>
+				<div class="project-tools-div">
+					<span class="project-tool-badge">Java</span>
+					<span class="project-tool-badge">H2</span>
+					<span class="project-tool-badge">Maven</span>
+					<span class="project-tool-badge">JavaFX</span>
+					<span class="project-tool-badge">JPA</span>
+					<span class="project-tool-badge">MVC</span>
+					<span class="project-tool-badge">Figma</span>
+					<span class="project-tool-badge">Kanban</span>
+				</div>
+			</div>
+			<div class="project-details-div" id="paragraph-9">
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Leírás:</label>
+					Osztálynapló-funkcionalitás megvalósítása csoportos egyetemi projekt keretében: az osztály érdemjegyeinek és tanulók adatainak kezelése,
+					CRUD-műveletek, alapszintű felhasználó-kezelés (user, parent, teacher, classhead, admin);
+					Felhőtárhely, verziókezelés és  Kanban-tábla használata a csoportos fejlesztéshez; <i>Figma</i>-terv készítése a feladat és a felület ábrázolásához;
+					<i>Maven</i> alapú asztali alkalmazás fejlesztése, perzisztencia megvalósítása beágyazott <i>H2</i>-adatbázisban, <i>JPA:Hibernate</i> használata
+					<i>ORM</i>-alapú adatkezeléshez és <i>dao</i>-réteghez, alkalmazásfelület felépítése <i>Stage</i>-betöltésekkel és <i>MVC</i>-architektúrával.
+				</p>
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Forrás:</label>
+					<a class="project-resource" href="https://github.com/ViktorHapak/Maven-project-2023-24-I.csoport" target="_blank">
+						https://github.com/ViktorHapak/Maven-project-2023-24-I.csoport
+					</a>
+				</p>
+			</div>
+		</div>
+   </div>
+   <div class="card bg-secondary">
+		<div class="card-header px-3 py-2">
+			<div class="row h-100">
+				<h4 class="text-white fw-bold">Mobil alkalmazás Java nyelven : szenzoros detektálás és bolti funkcionalitás</h4>
+			</div>
+		</div>
+		<div class="card-body p-4">
+			<div class="project-body-row">
+				<div class="open-details-div">
+					<button class="btn btn-primary btn-sm open-details-button" onclick="openDetails('project10-arrow','paragraph-10')">
+						<i class="fa-solid fa-chevron-down" id="project10-arrow"></i>
+					</button>
+				</div>
+				<div class="project-tools-div">
+					<span class="project-tool-badge">Java</span>
+					<span class="project-tool-badge">Android Studio</span>
+					<span class="project-tool-badge">Android SDK</span>
+					<span class="project-tool-badge">MVVM</span>
+					<span class="project-tool-badge">Sensor API</span>
+				</div>
+			</div>
+			<div class="project-details-div" id="paragraph-10">
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Leírás:</label>
+					Két mobilalkalmazás a szenzorok és perzisztens állapotok használatának bemutatására: Fényerősség- és mágnesesirány-érzékelés szenzoradatok alapján, ennek megjelenítése a telefonos képernyőn;
+					szenzorokat megvalósító belső osztályok használata szenzoralapú eseménykezeléssel; Bolti alapműködés kosár- és eladási funkciókkal, 
+					terméklista kategorizálása, napi tranzakciók és bevétel megtekintése;
+					<i>ActionResult</i>-alapú oldalbetöltés és eredményvisszaadás (pl. hozzáadott terméklistával és hozzáfűzésével),
+					<i>SharedPreferences</i>-szintű perzisztens állapotok használata napi adatok mentéséhez,
+					<i>Fragment</i>-ek használata a kategorizáció során, dátumérték alapján előző napi értékek törlése. 
+					
+				</p>
+				<p class="project-details-paragraph">
+					<label class="project-details-paragraph-title">Forrás:</label>
+					<a class="project-resource" href="https://github.com/ViktorHapak/Anroid_Studio_apps" target="_blank">
+						https://github.com/ViktorHapak/Anroid_Studio_apps
+					</a>
+				</p>
+			</div>
+		</div>
+   </div>
+  </div>
+  
+ <div class="references-div" id="contact-block">
+	<h2 class="section-title">Hivatkozások</h2>
+	<div class="ref-items">
+	 <span class="refs">
+		<img class="ref-logo" data-url="https://github.com/ViktorHapak" target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" onClick="openLink(this)">
+		<img class="ref-logo" data-url="https://www.linkedin.com/in/viktor-hap%C3%A1k-a78544372/?isSelfProfile=true" target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" onClick="openLink(this)">
+		<img class="ref-logo" data-url="https://www.facebook.com/profile.php?id=100010643715535" target="_blank" src="./imgs/facebook.webp" alt="Facebook" onClick="openLink(this)">
+		<img class="ref-logo" src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" alt="E-mail" onclick="window.location.href='mailto:viktor.hapak@gmail.com'">
+	 </span>
+	</div>
+ </div>
+
+ 
+
+<footer class="text-center py-3 bg-dark text-light fw-semibold">
+	<p class="m-2">
+		Hapák Viktor © 2026. Minden jog fenntartva
+	</p>
+</footer>
+
+<script 
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="index.js"></script>
+</body>
+</html>
