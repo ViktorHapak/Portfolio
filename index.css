@@ -222,8 +222,6 @@ body {
     transform: scaleX(1);
 }
 
-
-
 .navbar-brand {
     display: inline-flex;
     align-items: center;
@@ -914,6 +912,13 @@ body {
 	    object-position: center 42%;
 	    display: block;
     }
+
+	.side-nav {
+    	right: -150px;
+		width: 150px;
+	}
+
+	
 
 	.title-div {
         width: 100%;
