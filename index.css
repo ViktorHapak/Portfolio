@@ -938,6 +938,10 @@ body {
 	.project-details-div.open {
 		max-height: 1800px;
 	}
+
+	.ref-items{
+		justify-content: center;
+	}
 }
 
 
