@@ -905,5 +905,37 @@ body {
 	
 }
 
+@media (max-width: 700px){
+	.profile {
+        width: min(65vw, 250px);
+        height: auto;
+        border-radius: 50%;
+    }
+
+	.title-div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: clamp(28px, 7vw, 44px);
+        overflow-wrap: break-word;
+    }
+
+    .profession-title {
+        font-size: clamp(20px, 5vw, 30px);
+    }
+
+	.enum-div,
+    .projects-div,
+    .references-div {
+        padding: 18px 24px 18px 24px; 
+    }
+
+	.project-details-div.open {
+		max-height: 1800px;
+	}
+}
+
 
 
