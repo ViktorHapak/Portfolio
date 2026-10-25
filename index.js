@@ -81,6 +81,8 @@ function scrollToSection(sectionId) {
             block: "start"
         });
     }
+
+	sidemenuRef.classList.remove("open");
 }
 
 function scrollToTop() {
